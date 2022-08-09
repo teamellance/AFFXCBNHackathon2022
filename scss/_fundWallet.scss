@@ -1,0 +1,37 @@
+.walleth{
+    @include main-container;
+}
+
+.subhero2{
+    display: flex;
+    @include main-container;
+    justify-content: center;
+
+    .fund-item{
+        background: lighten($grey-color, 45%) ;
+        border: 1px solid ($grey-color, 15%) ;
+        height: 125px;
+        width: 30%;
+        border-radius: 7px;
+        margin-top: 30px;
+        margin-right: 15px;
+       
+             h4{
+                text-align: center;
+                font-weight: normal;
+                font-size: 12px;
+                }
+            .img{
+                width:50px;
+                height: 50px;
+                padding-top:14px;
+                padding-left: 14px;
+                margin: 20px auto ;
+                .bi{
+                    color:$primary-color;
+                    font-size: 20px;
+                }
+            }
+           
+    }
+}
