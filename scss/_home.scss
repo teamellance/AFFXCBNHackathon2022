@@ -1,0 +1,199 @@
+.nav{
+    @include main-container;
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top:-60px;
+    left: 20px;
+    &-name{
+        display: flex;
+        align-items: center;
+        .fa{
+            font-size: 30px;
+        }
+        .names{
+            margin-left: 7px;
+            p{
+                color: $grey-color;
+                font-size: 12px;
+            }
+            h4{
+                font-size: 14px;
+                font-weight: normal;
+                margin-top: 7px;
+            }
+        }
+    }
+
+    &-notification{
+        .fa{
+            font-size: 20px;
+        }
+    }
+
+    
+}
+
+.hero{
+    @include main-container;   
+    width: 90%;
+    margin-top: 100px;
+    margin-bottom: 60px;
+
+    &Inner{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid $primary-color;
+        padding:20px;
+        border-radius: 7px;
+        background: linear-gradient(90deg, #209831 , $primary-color);
+        color: #fff;
+        overflow: hidden;
+        position: relative;
+        .balance{
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            
+            z-index: 2;
+            h4{
+                font-weight: normal;
+                font-size: 14px;
+            }
+            .fa{
+                font-size: 16px;
+            }
+        }
+        .amount{
+            display: flex;
+            justify-content: space-between;
+            &Logo{
+                display: flex;
+                align-items: center;
+                img{
+                    width: 30px;
+                    margin-right: 6px;
+                }
+                 h3{
+                font-size: 23px;
+                font-weight: normal;
+                margin-top: 10px;
+            }
+            }
+           
+            .fa{
+                font-size: 16px;
+                padding-top:15px ;
+            }
+        }
+        .circle{
+            background: #008A0082;
+            width:190px;
+            height:80px;
+            position:absolute;
+            right:-15px;
+            top:-35px;
+            border-radius: 50%;
+            transform: rotateZ(20deg) scale(1.2);
+        }
+    }
+}
+
+.subhero{
+    display: flex;
+    @include main-container;
+    justify-content: center;
+
+    a{
+        text-decoration: none;
+        margin: 0;
+    }
+    .fund{
+        background: $fund-color;
+        height: 125px;
+        width: 300px;
+        border-radius: 7px;
+        .img{
+            width:50px;
+            height: 50px;
+            background: lighten($fund-color, 10%);
+            border-radius: 50%;
+            margin: 20px auto ;
+            padding-left: 12px;
+            padding-top: 2px;
+            .bi{
+                font-size: 25px;
+                color: #fff;
+                text-align: center;
+            }
+        }
+        h4{
+            color:#fff;
+            text-align: center;
+            letter-spacing: 1px;
+            font-size: 15px;
+        }
+
+    }
+    .send{
+        @extend .fund;
+        margin-left: 20px;
+        background: $send-color;
+        .img{
+            background: lighten($send-color, 10%);
+        }
+    }
+}
+
+
+body{
+    position: relative;
+    height:100vh;
+}
+.footer{
+    position:absolute;
+    bottom: 0;
+    width:100%;
+    box-shadow:0 0 20px 0 rgba(0, 0, 0, 0.1);
+
+    a{
+        text-decoration: none;
+    }
+    &Inner{
+        display:flex;
+        justify-content: space-between;
+        width:90%;
+        margin:0 auto;
+        
+        
+        &-items{
+            padding: 20px 15px;
+
+            .fa{
+                text-align: center;
+                padding-left: 10px;
+                font-size: 25px;
+                margin-bottom: 10px;
+                color:$grey-color;
+            }
+            p{
+                color:$grey-color;
+                .active{
+                        color: $primary-color;
+                }
+            }
+        }
+    }
+}
+
+.recenth{
+    width:80%;
+    margin:50px auto 0;
+    h4{
+        font-size: 17px;
+        font-weight: bold;
+    }
+    
+}

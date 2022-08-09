@@ -1,0 +1,32 @@
+.account2{
+    @include main-container;
+    padding: 0 10px;
+    text-align: center;
+    font-size: 15px;
+
+    &-options{
+        margin: 0 auto 25px;
+        display: flex;
+        justify-content: space-between;
+        padding: 0 30px;
+        width: 300px;
+        text-align: center;
+
+        .input{
+            width:30px;
+            height: 30px;
+            border: 1px solid $primary-color;
+        }
+    }
+
+    .submit{
+            @include continue-btn;
+            margin: 15px 0 20px;
+    }
+    p{
+        color:$grey-color;
+    }
+    a{
+        color: $error-color;
+    }
+}

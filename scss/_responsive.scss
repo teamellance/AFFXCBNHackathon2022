@@ -1,0 +1,111 @@
+@include media-sm{
+    .logoBtn{
+        width: 100%;
+        position: absolute;
+        bottom:25%;
+        .button{
+            width: 60%;
+        }
+    }
+
+   
+}
+
+
+@include media-md{
+    .logo{
+        &Enaira{
+            img{
+                width:500px;
+                margin-right: 10px;
+            }
+            h2{
+                font-size: 35px;
+                font-weight: bolder;
+            }
+        }
+        p{
+            text-align: center;
+            margin-top: 10px;
+        }
+    }
+
+    .body{
+        .footer2{
+            position: absolute;
+            bottom: 20px;
+            left:0;
+           
+        }
+    }
+
+    .account{
+        @include main-container;
+    
+        .account-options{
+            margin-bottom: 50px;
+            margin: 0 auto;
+            width: 600px;
+            .input{
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .hero{
+    
+        &Inner{
+
+            .balance{
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 80px;
+
+                h4{
+                    font-weight: normal;
+                    font-size: 18px;
+                }
+            }
+        }
+    }
+
+    .subhero{
+    
+        .fund{
+            height: 175px;
+            width: 300px;
+            border-radius: 7px;
+            h4{
+                font-size: 20px;
+            }
+        }
+    }
+
+    .recenth{
+
+        h4{
+            font-size: 22px;
+        }
+        
+    }
+
+    .subhero2{
+    
+        .fund-item{
+            height: 175px;
+            width: 30%;
+           
+                 h4{
+                    font-size: 17px;
+                    }
+                .img{
+
+                    .bi{
+                        font-size: 20px;
+                    }
+                }
+               
+        }
+    }
+}
+
