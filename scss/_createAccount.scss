@@ -1,0 +1,73 @@
+.account{
+    @include main-container;
+
+    .account-options{
+        margin-bottom: 50px;
+        justify-content: center;
+        margin: 0 auto;
+
+        label{
+            width:100%;
+            margin-bottom: 15px;
+        }
+        .input{
+            margin-top: 6px;
+            width:100%;
+            padding: 13px;
+            border-radius: 7px;
+            border: 1px solid lighten($grey-color, 30%) ;
+            color: lighten($grey-color, 10%);
+        }
+        .checkbox{
+            margin-top: 15px;
+            background: $primary-color;
+        }
+        span{
+            font-size: 13px;
+            a{
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+        
+    }
+
+    .footer{
+        position: absolute;
+        bottom: 20px;
+        width: 85%;
+
+        .submit{
+            @include continue-btn;
+            
+        }
+       
+    }
+}
+
+.arrow{
+    width: 90%;
+    margin: 0 auto;
+    a{
+        position: absolute;
+        font-size: 18px;
+        font-weight: normal;
+        top:20px;
+    
+            text-decoration: none;
+            color:#000;
+        
+    }
+}
+.arrow2{
+   @extend .arrow;
+    a{
+        top:-30px;
+    }
+}
+.arrow3{
+   @extend .arrow;
+    a{
+        top:-60px;
+    }
+}

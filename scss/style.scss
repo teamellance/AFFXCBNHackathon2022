@@ -1,0 +1,110 @@
+@import 'config';
+@import 'createAccount';
+@import 'verifyAccount';
+@import 'home';
+@import 'fundWallet';
+
+.header{
+    @include container;
+    text-align: center;
+
+    h3{
+        margin: 20px auto;
+        letter-spacing: 1px;
+    }
+    h5{
+        font-weight:500;
+        font-size: 16px;
+        span{
+            color: $grey-color;
+            font-size: 15px;
+        }
+    }
+
+}
+
+.body{
+    @include container;
+    padding: 0 30px;
+
+    &-options{
+        margin-bottom: 35px;
+
+        span{
+            color: $primary-color;
+            font-size: 21px;
+        }
+        p{
+            margin-top: 10px;
+            padding-left: 18px;
+            color: $grey-color;
+            font-size: 15px;
+            line-height: 18x;
+        }
+        radio {
+            border: 1px solid #00B712;
+        }
+    }
+    form{
+        position: relative;
+        height: 50vh;
+    }
+    .footer2{
+        position: absolute;
+        bottom: 20px;
+        left:25%;
+       
+    }
+
+    .submit{
+        position: absolute;
+        width:100%;
+        padding: 10px;
+        background-color: $primary-color;
+        color:#fff;
+        border:none;
+        border-radius: 6px;
+        font-size: 16px;
+        text-align: center;
+    }
+    h5{
+        margin-top: 60px;
+        font-size: 12px;
+        text-align: center;
+        a{
+            color:$primary-color;
+            text-decoration: none;
+        }
+    }
+}
+
+.logo{
+    width: 97%;
+    margin:0 auto;
+    padding-top: 200px;
+    img{
+        width:100%;
+    }
+}
+
+.logoBtn{
+    width: 100%;
+    position: absolute;
+    bottom:20%;
+    .button{
+        width: 80%;
+        margin:0 auto;
+        background: #fff;
+        text-align: center;
+        padding:15px;
+        border-radius: 10px;
+        a{
+            text-align: center;
+            text-decoration: none;
+            color: darken($primary-color, 30%) ;
+        }
+    }
+}
+
+
+
